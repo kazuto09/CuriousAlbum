@@ -11,7 +11,10 @@ export default function Card(props: card) {
         alt="Card Image"
       />
       <h2 className="text-lg font-medium text-gray-900">{name}</h2>
-      <p className="mt-2 text-gray-600">{explanation}</p>
+      <details>
+        <summary>説明</summary>
+        <p className="mt-2 text-gray-600">{explanation}</p>
+      </details>
       <div className="mt-4">
         <a
           href={related_url}

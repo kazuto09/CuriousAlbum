@@ -1,18 +1,14 @@
 import React from "react";
 import Card from "@/components/Card";
 import { animals } from "@/data/animals";
+import Header from "@/components/Header";
 
 export default function index() {
+  const handleChildButtonClick = (isClick: boolean) => {};
+
   return (
     <>
-      <header className="top-0 sticky flex flex-auto  bg-blue-500 h-16">
-        <div className="flex items-center text-4xl font-bold font-sans text-gray-50">
-          <button onClick={() => window.alert("サメなんて観ていない")}>
-            <img src="shark.svg" className="h-8 w-8" />
-          </button>
-          変ないきもの水族館
-        </div>
-      </header>
+      <Header />
       <div className="flex-wrap justify-center md:flex flex-wrap justify-start lg:flex-wrap justify-start">
         {animals.map((animal, index) => {
           return (

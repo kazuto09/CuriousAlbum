@@ -4,8 +4,6 @@ import { animals } from "@/data/animals";
 import Header from "@/components/Header";
 
 export default function index() {
-  const handleChildButtonClick = (isClick: boolean) => {};
-
   return (
     <>
       <Header />

@@ -2,6 +2,7 @@ import React from "react";
 import Card from "@/components/Card";
 import { animals } from "@/data/animals";
 import Header from "@/components/Header";
+import Link from "next/link";
 
 export default function index() {
   return (
@@ -18,6 +19,14 @@ export default function index() {
                   explanation={animal.explanation}
                   related_url={animal.related_url}
                 />
+                <div className="mt-4">
+                  <Link
+                    href={`/animals/${animal.related_url}`}
+                    className="text-indigo-500 hover:text-indigo-600 font-medium"
+                  >
+                    詳細はこちら
+                  </Link>
+                </div>
               </div>
             </div>
           );
